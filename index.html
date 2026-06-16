@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Nohelia Cristina Reyes 💜</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000000,#1a0033,#4b0082);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* LOGIN */
+
+#login{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#login h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+#login input{
+    padding:15px;
+    width:250px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+#login button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#a855f7;
+    color:white;
+}
+
+/* NAV */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:20px;
+}
+
+/* GALERIA */
+
+section{
+    padding:100px 30px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+/* CARTA */
+
+.carta{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.1);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    line-height:1.8;
+}
+
+/* RAZONES */
+
+.razones{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.1);
+    padding:25px;
+    border-radius:20px;
+}
+
+/* MODAL */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal img{
+    max-width:90%;
+    max-height:90%;
+}
+
+/* CORAZONES */
+
+.corazon{
+    position:fixed;
+    color:#d8b4fe;
+    animation:subir 10s linear infinite;
+    z-index:-1;
+}
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+footer{
+    text-align:center;
+    padding:50px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="login">
+
+<h1>💜 Bienvenida Nohelia 💜</h1>
+
+<p>Ingrese la clave especial</p>
+
+<br>
+
+<input type="password" id="pass">
+
+<button onclick="verificar()">
+Entrar
+</button>
+
+</div>
+
+<div id="contenido" style="display:none">
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#galeria">Galería</a>
+<a href="#razones">Razones</a>
+<a href="#carta">Carta</a>
+</nav>
+
+<section class="hero" id="inicio">
+
+<h1>Nohelia Cristina Reyes 💜</h1>
+
+<p>
+Cada fotografía guarda un recuerdo,
+cada recuerdo una sonrisa,
+y cada sonrisa una razón más para amarla.
+</p>
+
+</section>
+
+<section id="galeria">
+
+<h2>📸 Nuestro Álbum</h2>
+
+<div class="galeria">
+
+<img src="1.jpg" onclick="abrir(this.src)">
+<img src="2.jpg" onclick="abrir(this.src)">
+<img src="3.jpg" onclick="abrir(this.src)">
+<img src="4.jpg" onclick="abrir(this.src)">
+<img src="5.jpg" onclick="abrir(this.src)">
+<img src="6.jpg" onclick="abrir(this.src)">
+<img src="7.jpg" onclick="abrir(this.src)">
+<img src="8.jpg" onclick="abrir(this.src)">
+<img src="9.jpg" onclick="abrir(this.src)">
+<img src="10.jpg" onclick="abrir(this.src)">
+<img src="11.jpg" onclick="abrir(this.src)">
+<img src="12.jpg" onclick="abrir(this.src)">
+<img src="13.jpg" onclick="abrir(this.src)">
+<img src="14.jpg" onclick="abrir(this.src)">
+<img src="15.jpg" onclick="abrir(this.src)">
+<img src="16.jpg" onclick="abrir(this.src)">
+<img src="17.jpg" onclick="abrir(this.src)">
+<img src="18.jpg" onclick="abrir(this.src)">
+<img src="19.jpg" onclick="abrir(this.src)">
+<img src="20.jpg" onclick="abrir(this.src)">
+
+</div>
+
+</section>
+
+<section id="razones">
+
+<h2>💜 Razones por las que la amo</h2>
+
+<div class="razones">
+
+<div class="card">Su hermosa sonrisa.</div>
+<div class="card">Su forma de tratarme.</div>
+<div class="card">Su noble corazón.</div>
+<div class="card">Su apoyo incondicional.</div>
+<div class="card">La paz que me transmite.</div>
+<div class="card">Porque hace mis días mejores.</div>
+
+</div>
+
+</section>
+
+<section id="carta">
+
+<h2>💌 Carta para Usted</h2>
+
+<div class="carta">
+
+<p>
+
+Mi amada Nohelia:
+
+Cada día que pasa me enamoro más de usted.
+Me enamora su sonrisa, su forma de ser,
+sus detalles y la manera tan especial en la que ilumina mis días.
+
+Gracias por su tiempo, por su cariño,
+por su paciencia y por cada momento compartido.
+
+Quizás no siempre soy la persona más fácil,
+pero quiero que sepa que por usted haría todo lo posible para mejorar.
+
+Ha logrado algo que pocas personas consiguen:
+hacerme sentir amado, comprendido y feliz.
+
+Gracias por llegar a mi vida y por convertirse
+en alguien tan importante para mí.
+
+Espero que cada vez que vea estas fotografías
+recuerde que detrás de cada una existe un momento
+que guardo con muchísimo cariño en mi corazón.
+
+La amo profundamente y deseo seguir construyendo
+muchos recuerdos hermosos a su lado.
+
+Con todo mi amor. 💜
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+💜 Dedicado a la casualidad más bonita de mi vida, aquella que llegó sin avisar y creó una conexión tan especial como irrepetible. 💜
+
+</footer>
+
+</div>
+
+<div class="modal" id="modal" onclick="cerrar()">
+<img id="imagenGrande">
+</div>
+
+<script>
+
+function verificar(){
+
+let clave=document.getElementById("pass").value;
+
+if(clave==="29042026"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("contenido").style.display="block";
+
+}else{
+
+alert("Clave incorrecta 💜");
+
+}
+
+}
+
+function abrir(src){
+
+document.getElementById("modal").style.display="flex";
+document.getElementById("imagenGrande").src=src;
+
+}
+
+function cerrar(){
+
+document.getElementById("modal").style.display="none";
+
+}
+
+setInterval(()=>{
+
+let c=document.createElement("div");
+
+c.className="corazon";
+
+c.innerHTML="💜";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.fontSize=(20+Math.random()*30)+"px";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.remove();
+},10000);
+
+},500);
+
+</script>
+
+</body>
+</html>
